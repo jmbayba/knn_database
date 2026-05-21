@@ -1,2 +1,5 @@
-# knn_database
-KNN on data from a database using sql.
+This repository features two different ways to compute KNN for a database. The database features logistics data for a fictional trucking company. The predicted variable is "on_time_flag" and the response variables are "detention_minutes" and "actual_distance_miles". One file in the reposity soley uses SQL the query the data and find the top ten closest neighbors to the target values. (the detention minutes and the miles that I input into the script to find the predicted value for) Then based on the majority of the top ten closest neigbors the predicted value was decided. The other file is an Rscript that fetures SQL that queries the database to make a data frame and then uses an R package called "class" to preform a KNN. The "knn" function from "class" gave just the predicted result using 1000 rows of the data and iputed values.
+Refrenced Database
+Yogape Rodriguez (2025).
+Synthetic Logistics Operations Database (2022-2024). 
+Kaggle Dataset. https://www.kaggle.com/datasets/yogape/logistics-operations-database
